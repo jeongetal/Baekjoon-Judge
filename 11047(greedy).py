@@ -1,11 +1,10 @@
-input_data=input().split(' ')
-N=int(input_data[0])
-K=int(input_data[1])
+import sys
+N,K=map(int,sys.stdin.readline().split())
 coin=[]
 count=[]
 Sum=0
 for n in range(N):
-    coin.append(int(input()))
+    coin.append(int(sys.stdin.readline()))
     count.append(0)
 j=N
 while(Sum!=K):
